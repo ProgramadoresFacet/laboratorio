@@ -1,1 +1,1 @@
-este es otro archivo dentro de una carpeta llamada html
+este es otro archivo dentro de una carpeta llamada HTML.. OK!
