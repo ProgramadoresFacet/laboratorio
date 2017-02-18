@@ -17,10 +17,40 @@
     <script src="<?=base_url('assets/template/')?>js/lumino.glyphs.js"></script>
     <script src="<?=base_url('assets/template/')?>js/script/ingresar_resultados.js"></script> <!--PABLO-->
 
+    <script src="<?=base_url('assets/template/')?>js/jquery-1.4.2.min.js"></script><!--PARA FOCO Y NUM DE PROTOCOLO-->
+    <script src="<?=base_url('assets/template/')?>js/autocomplete.jquery.js"></script><!-- AUTOCOMPLETAR!!-->
+    <script src="<?=base_url('assets/template/')?>js/scripts/ingresar_ordenes.js"></script><!-- INGRESAR_ORDENES!!-->
     <!--[if lt IE 9]>
     <script src="<?=base_url('assets/template/')?>js/html5shiv.js"></script>
     <script src="<?=base_url('assets/template/')?>js/respond.min.js"></script>
     <![endif]-->
+
+    <!-- AUTOCOMPLETAR -->
+    <script>
+        $('.autocomplete').autocomplete();
+
+        $(function () {
+            var availableTags=[<?php foreach($medicos as $filas):echo '"'.$filas['apellidomedico'];?>",<?php
+            endforeach;?>]
+            $("#tags-medico").autocomplete({
+                source: availableTags
+            });
+        });
+        $(function () {
+            var availableTags=[<?php foreach($obrassociales as $filas):echo '"'.$filas['nombreobrasocial'];?>",<?php
+            endforeach;?>]
+                $("#tags-OS").autocomplete({
+                    source: availableTags
+                });
+        });
+        $(function () {
+            var availableTags=[<?php foreach($analisis as $filas):echo '"'.$filas['nombreanalisis'];?>",<?php
+            endforeach;?>]
+                $("#tags-analisis").autocomplete({
+                    source: availableTags
+                });
+        });
+    </script>
 
 </head>
 

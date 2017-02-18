@@ -5,11 +5,12 @@
 <script src="<?=base_url('assets/template/')?>js/chart-data.js"></script>
 <script src="<?=base_url('assets/template/')?>js/easypiechart.js"></script>
 <script src="<?=base_url('assets/template/')?>js/easypiechart-data.js"></script>
+<!-- vicky-->
 <script src="<?=base_url('assets/template/')?>js/bootstrap-datepicker.js"></script>
+<script src="<?=base_url('assets/template/')?>js/jquery-1.12.4.js"></script>
+<script src="<?=base_url('assets/template/')?>js/jquery-ui.js"></script>
+<!--fin vicky-->
 <script>
-    $('#calendar').datepicker({
-    });
-
     !function ($) {
         $(document).on("click","ul.nav li.parent > a > span.icon", function(){
             $(this).find('em:first').toggleClass("glyphicon-minus");
@@ -24,6 +25,9 @@
         if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
     })
 </script>
+
+<br><br><br>
+
 </body>
 <!-- FIN FOOTER -->
 </html>
