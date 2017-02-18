@@ -10,8 +10,12 @@
     <link href="<?=base_url('assets/template/')?>css/datepicker3.css" rel="stylesheet">
     <link href="<?=base_url('assets/template/')?>css/styles.css" rel="stylesheet">
 
+    <link href="<?=base_url('assets/template/')?>css/css.css" rel="stylesheet">
+
     <!--Icons-->
+    <script src="<?=base_url('assets/template/')?>js/jquery-1.11.1.min.js"></script>
     <script src="<?=base_url('assets/template/')?>js/lumino.glyphs.js"></script>
+    <script src="<?=base_url('assets/template/')?>js/script/ingresar_resultados.js"></script> <!--PABLO-->
 
     <!--[if lt IE 9]>
     <script src="<?=base_url('assets/template/')?>js/html5shiv.js"></script>
