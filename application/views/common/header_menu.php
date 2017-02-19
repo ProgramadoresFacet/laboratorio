@@ -8,9 +8,12 @@
 
     <link href="<?=base_url('assets/template/')?>css/bootstrap.min.css" rel="stylesheet">
     <link href="<?=base_url('assets/template/')?>css/datepicker3.css" rel="stylesheet">
-    <link href="<?=base_url('assets/template/')?>css/styles.css" rel="stylesheet">
+    <link href="<?=base_url('assets/template/')?>css/styles.css" rel="stylesheet"><!-- ver iconos del menu-->
 
     <link href="<?=base_url('assets/template/')?>css/css.css" rel="stylesheet">
+    <link href="<?= base_url('assets/template/') ?>css/css.css" rel="stylesheet"> <!-- VER POR TABLA DE ANALISIS-->
+    <link href="<?= base_url('assets/template/') ?>css/jquery-ui.css" rel="stylesheet"> <!-- AUTOCOMPLETAR!!-->
+
 
     <!--Icons-->
     <script src="<?=base_url('assets/template/')?>js/jquery-1.11.1.min.js"></script>
